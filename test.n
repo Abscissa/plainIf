@@ -1,0 +1,20 @@
+using Nemerle.Imperative;
+
+class Test
+{
+	static Main(args : array[string]) : void
+	{
+		System.Console.WriteLine ("Hello, world!");
+		System.Console.WriteLine ($"Num args: $(args.Length)");
+		foreach(arg in args) System.Console.WriteLine($"$arg ");
+		
+		if(args.Length == 0)
+			System.Console.WriteLine ("No args");
+		else
+			System.Console.WriteLine ("Has args");
+		
+		// Look ma! No else!
+		if(args.Length == 1)
+			System.Console.WriteLine ("Exactly one arg");
+	}
+}

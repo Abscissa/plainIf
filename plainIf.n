@@ -1,0 +1,12 @@
+using Nemerle.Imperative;
+
+macro plainIf (cond, body)
+syntax ("if", "(", cond, ")", body)
+{
+	<[
+		when($cond)
+		{
+			$body
+		}
+	]>
+}
