@@ -1,7 +1,7 @@
 Plain If for Nemerle
 ====================
 
-[Nemerle](http://www.nemerle.org/About) is great, but I hate that it requires "when" instead of "if" every time you don't have an "else" block.
+[Nemerle](http://www.nemerle.org/About) is great, but I hate that it requires "when" instead of "if" every time you don't have an "else" block. ([Why?](https://semitwist.com/articles/article/view/nemerle-s-when-bad-idea-easily-solved))
 
 Luckily, this is easily fixable *in library*, without hacking the compiler, thanks to Nemerle's awesomely powerful macro system. This library provides exactly that: The "if" statement's "else" block is now optional! No need for "when"!
 
