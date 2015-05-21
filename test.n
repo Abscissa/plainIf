@@ -16,5 +16,9 @@ class Test
 		// Look ma! No else!
 		if(args.Length == 1)
 			System.Console.WriteLine ("Exactly one arg");
+		
+		// Still works fine
+		def hasArgs = if(args.Length == 0) { false } else { true };
+		System.Console.WriteLine($"hasArgs: $hasArgs");
 	}
 }
